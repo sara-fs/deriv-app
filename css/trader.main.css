@@ -1201,7 +1201,8 @@
       margin-left: 24px; }
       .trade-container__replay .replay-chart__container .smartcharts {
         left: 0;
-        border-radius: 4px; }
+        border-radius: 4px;
+        /* postcss-bem-linter: ignore */ }
         .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .cq-top-ui-widgets,
         .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .info-box {
           transition: transform 0.25s ease; }
@@ -1236,6 +1237,13 @@
             margin-right: 0; }
             .trade-container__replay .replay-chart__container .smartcharts .ciq-chart .cq-bottom-ui-widgets .digits__container {
               transition: transform 0.25s ease; }
+        .trade-container__replay .replay-chart__container .smartcharts-mobile {
+          /* TODO: Remove this override once the issue is fixed in smartcharts */ }
+          .trade-container__replay .replay-chart__container .smartcharts-mobile .stx-holder.stx-panel-chart {
+            z-index: 14; }
+            .trade-container__replay .replay-chart__container .smartcharts-mobile .stx-holder.stx-panel-chart .cq-inchart-holder {
+              z-index: 109;
+              position: relative; }
       @media (min-width: 320px) and (max-width: 767px) {
         .trade-container__replay .replay-chart__container {
           flex: 1;
@@ -1486,54 +1494,59 @@
 
 /** @define smartcharts; weak */
 /* postcss-bem-linter: ignore */
-@media (min-width: 320px) and (max-width: 767px) {
-  .smartcharts-dark, .smartcharts-light {
-    /* postcss-bem-linter: ignore */
-    /** @define ciq-chart-type; weak */
-    /** @define ciq-chart-mode; weak */ }
-    .smartcharts-dark .cq-menu-dropdown-enter-done, .smartcharts-light .cq-menu-dropdown-enter-done {
-      margin-top: 0;
-      /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .cq-menu-dropdown-enter-done .icon-close-menu, .smartcharts-light .cq-menu-dropdown-enter-done .icon-close-menu {
-        opacity: 1;
-        pointer-events: auto;
-        top: 8px; }
-    .smartcharts-dark .cq-dialog-portal, .smartcharts-light .cq-dialog-portal {
-      /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .cq-dialog-portal .cq-dialog, .smartcharts-light .cq-dialog-portal .cq-dialog {
-        max-width: calc(100% - 36px); }
-    .smartcharts-dark .sc-chart-type__item, .smartcharts-light .sc-chart-type__item {
-      /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .sc-chart-type__item .sc-tooltip,
-      .smartcharts-dark .sc-chart-type__item .dc-tooltip, .smartcharts-light .sc-chart-type__item .sc-tooltip,
-      .smartcharts-light .sc-chart-type__item .dc-tooltip {
-        display: none; }
-    .smartcharts-dark .sc-chart-mode, .smartcharts-light .sc-chart-mode {
-      /* postcss-bem-linter: ignore */ }
-      .smartcharts-dark .sc-chart-mode__section__item, .smartcharts-light .sc-chart-mode__section__item {
+.smartcharts {
+  /* TODO: Remove this override once the issue is fixed in smartcharts */
+  /* postcss-bem-linter: ignore */ }
+  @media (min-width: 320px) and (max-width: 767px) {
+    .smartcharts-dark, .smartcharts-light {
+      /* postcss-bem-linter: ignore */
+      /** @define ciq-chart-type; weak */
+      /** @define ciq-chart-mode; weak */ }
+      .smartcharts-dark .cq-menu-dropdown-enter-done, .smartcharts-light .cq-menu-dropdown-enter-done {
+        margin-top: 0;
         /* postcss-bem-linter: ignore */ }
-        .smartcharts-dark .sc-chart-mode__section__item .sc-interval, .smartcharts-light .sc-chart-mode__section__item .sc-interval {
-          display: grid;
-          padding: 1.6rem;
-          grid-template-columns: 1fr;
-          /* postcss-bem-linter: ignore */
-          /* postcss-bem-linter: ignore */
+        .smartcharts-dark .cq-menu-dropdown-enter-done .icon-close-menu, .smartcharts-light .cq-menu-dropdown-enter-done .icon-close-menu {
+          opacity: 1;
+          pointer-events: auto;
+          top: 8px; }
+      .smartcharts-dark .cq-dialog-portal, .smartcharts-light .cq-dialog-portal {
+        /* postcss-bem-linter: ignore */ }
+        .smartcharts-dark .cq-dialog-portal .cq-dialog, .smartcharts-light .cq-dialog-portal .cq-dialog {
+          max-width: calc(100% - 36px); }
+      .smartcharts-dark .sc-chart-type__item, .smartcharts-light .sc-chart-type__item {
+        /* postcss-bem-linter: ignore */ }
+        .smartcharts-dark .sc-chart-type__item .sc-tooltip,
+        .smartcharts-dark .sc-chart-type__item .dc-tooltip, .smartcharts-light .sc-chart-type__item .sc-tooltip,
+        .smartcharts-light .sc-chart-type__item .dc-tooltip {
+          display: none; }
+      .smartcharts-dark .sc-chart-mode, .smartcharts-light .sc-chart-mode {
+        /* postcss-bem-linter: ignore */ }
+        .smartcharts-dark .sc-chart-mode__section__item, .smartcharts-light .sc-chart-mode__section__item {
           /* postcss-bem-linter: ignore */ }
-          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__content, .smartcharts-light .sc-chart-mode__section__item .sc-interval__content {
+          .smartcharts-dark .sc-chart-mode__section__item .sc-interval, .smartcharts-light .sc-chart-mode__section__item .sc-interval {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding-top: 16px; }
-          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item {
-            width: 100% !important;
-            margin: 0;
+            padding: 1.6rem;
+            grid-template-columns: 1fr;
+            /* postcss-bem-linter: ignore */
+            /* postcss-bem-linter: ignore */
             /* postcss-bem-linter: ignore */ }
-            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
-            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .dc-tooltip, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
-            .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .dc-tooltip {
-              display: none; }
-          .smartcharts-dark .sc-chart-mode__section__item .sc-interval__info, .smartcharts-light .sc-chart-mode__section__item .sc-interval__info {
-            margin-top: 0.4rem;
-            padding-left: 0.2rem; } }
+            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__content, .smartcharts-light .sc-chart-mode__section__item .sc-interval__content {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              padding-top: 16px; }
+            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item {
+              width: 100% !important;
+              margin: 0;
+              /* postcss-bem-linter: ignore */ }
+              .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
+              .smartcharts-dark .sc-chart-mode__section__item .sc-interval__item .dc-tooltip, .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .sc-tooltip,
+              .smartcharts-light .sc-chart-mode__section__item .sc-interval__item .dc-tooltip {
+                display: none; }
+            .smartcharts-dark .sc-chart-mode__section__item .sc-interval__info, .smartcharts-light .sc-chart-mode__section__item .sc-interval__info {
+              margin-top: 0.4rem;
+              padding-left: 0.2rem; } }
+  body.theme--light .smartcharts .chart-line.horizontal .title-wrapper {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.001) 30%, var(--general-main-1) 50%, rgba(255, 255, 255, 0.001) 75%); }
 
 .contract-drawer {
   width: 240px;
