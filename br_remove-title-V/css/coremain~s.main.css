@@ -5172,15 +5172,15 @@ strong {
   .welcome-column:hover {
     box-shadow: 0 0 3rem 0.5rem var(--shadow-drop); }
   .welcome-column--left:hover {
-    background-image: url(/br_remove-title-V/public/images/common/welcome-bg-blue.svg); }
+    background-image: url(/br_remove-title-v/public/images/common/welcome-bg-blue.svg); }
   @media (min-width: 320px) and (max-width: 767px) {
     .welcome-column--left {
-      background-image: url(/br_remove-title-V/public/images/common/welcome-bg-blue.svg); } }
+      background-image: url(/br_remove-title-v/public/images/common/welcome-bg-blue.svg); } }
   .welcome-column--right:hover {
-    background-image: url(/br_remove-title-V/public/images/common/welcome-bg-red.svg); }
+    background-image: url(/br_remove-title-v/public/images/common/welcome-bg-red.svg); }
   @media (min-width: 320px) and (max-width: 767px) {
     .welcome-column--right {
-      background-image: url(/br_remove-title-V/public/images/common/welcome-bg-red.svg); } }
+      background-image: url(/br_remove-title-v/public/images/common/welcome-bg-red.svg); } }
   .welcome-column__icons {
     display: flex;
     flex-direction: row;
