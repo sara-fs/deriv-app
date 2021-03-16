@@ -1,11 +1,11 @@
 {
   "main~s.css": "/br_fix-2line-issue/css/coremain~s.main.css",
-  "main~s.js": "/br_fix-2line-issue/js/core.main~s.f5a1dc81e5c4cc24ec01.js",
+  "main~s.js": "/br_fix-2line-issue/js/core.main~s.75eeb5348e682e12401e.js",
   "main~s.svg": "/br_fix-2line-issue/public/images/common/welcome-bg-red.svg",
   "trader~trader_dist_js_trader_js_37c88ea6.js": "/br_fix-2line-issue/js/core.trader~trader_dist_js_trader_js_37c88ea6.d167670979a6034a7d99.js",
   "account.js": "/br_fix-2line-issue/js/core.account.84e4cbad495a50708ff6.js",
   "cashier.js": "/br_fix-2line-issue/js/core.cashier.9fb733c5d97f1106d975.js",
-  "bot.js": "/br_fix-2line-issue/js/core.bot.fdbbf37bacdf768085be.js",
+  "bot.js": "/br_fix-2line-issue/js/core.bot.e4119cc0ea154cc90085.js",
   "dashboard.js": "/br_fix-2line-issue/js/core.dashboard.a2424a31914d575fe154.js",
   "complaints-policy.css": "/br_fix-2line-issue/css/core.complaints-policy.21cab1da62954279e971.css",
   "complaints-policy.js": "/br_fix-2line-issue/js/core.complaints-policy.50e008d3e7e0643453b3.js",
