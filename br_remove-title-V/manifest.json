@@ -2,18 +2,18 @@
     "name": "Deriv",
     "short_name": "Deriv",
     "description": "Deriv gives everyone an easy way to participate in the financial markets.",
-    "start_url": "/br_remove-title-v/",
+    "start_url": "/br_remove-title-V/",
     "display": "standalone",
     "orientation": "portrait",
 
     "icons": [
         {
-            "src": "/br_remove-title-v/public/images/common/logos/platform_logos/ic_platform_deriv_192x192.png",
+            "src": "/br_remove-title-V/public/images/common/logos/platform_logos/ic_platform_deriv_192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/br_remove-title-v/public/images/common/logos/platform_logos/ic_platform_deriv_512x512.png",
+            "src": "/br_remove-title-V/public/images/common/logos/platform_logos/ic_platform_deriv_512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
