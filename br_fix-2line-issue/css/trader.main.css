@@ -3240,6 +3240,9 @@
 .smartcharts-mobile .sc-categorical-display {
   height: calc(100% - 38px) !important; }
 
+.smartcharts-mobile .cq-menu-dropdown .title .title-text {
+  display: inline; }
+
 @-webkit-keyframes slide {
   0% {
     transform: translateX(-100%); }
